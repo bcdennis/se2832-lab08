@@ -1,6 +1,6 @@
 <html>
 	<head>
-		<title>Laravel</title>
+		<title>SE2832 Lab 08</title>
 		
 		<link href='//fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
 
@@ -40,8 +40,14 @@
 	<body>
 		<div class="container">
 			<div class="content">
-				<div class="title">Laravel 5</div>
-				<div class="quote">{{ Inspiring::quote() }}</div>
+				<div class="title">SE2832</div>
+                @if (Auth::guest())
+
+                    <div class="quote">Please <a href="{{ url('/auth/login') }}">login</a> or <a href="{{ url('/auth/register') }}">register</a> before continuing.</div>
+                @else
+                    <div class="quote"><a href="/home">Go to your dashboard.</a></div>
+                @endif
+
 			</div>
 		</div>
 	</body>

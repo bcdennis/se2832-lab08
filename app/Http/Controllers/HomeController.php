@@ -1,6 +1,9 @@
 <?php namespace App\Http\Controllers;
 
+use Auth;
+
 class HomeController extends Controller {
+
 
 	/*
 	|--------------------------------------------------------------------------
@@ -32,5 +35,16 @@ class HomeController extends Controller {
 	{
 		return view('home');
 	}
+
+    public function delete()
+    {
+
+
+        $user = Auth::user();
+        Auth::logout();
+        $user->delete();
+
+        return redirect('/');
+    }
 
 }

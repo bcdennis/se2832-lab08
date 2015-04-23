@@ -8,7 +8,8 @@
 				<div class="panel-heading">Home</div>
 
 				<div class="panel-body">
-					You are logged in!
+					You are logged in!<br/>
+                    <a href="{{ url('/home/delete') }}">Delete my account.</a>
 				</div>
 			</div>
 		</div>
