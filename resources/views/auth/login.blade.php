@@ -34,7 +34,7 @@
 								<input type="password" class="form-control" name="password">
 							</div>
 						</div>
-
+<?php /*
 						<div class="form-group">
 							<div class="col-md-6 col-md-offset-4">
 								<div class="checkbox">
@@ -44,7 +44,7 @@
 								</div>
 							</div>
 						</div>
-
+*/?>
 						<div class="form-group">
 							<div class="col-md-6 col-md-offset-4">
 								<button type="submit" class="btn btn-primary">Login</button>
