@@ -1,0 +1,8 @@
+/vendor
+.env
+/.idea
+/tests/reports
+composer.lock
+/node_modules
+
+tests/_output/*
